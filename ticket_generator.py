@@ -49,8 +49,7 @@ class BitCode:
                 status = words[6]
             elif ("qr:") in words and status == "FOUND:":
                 account = words[1]
-                ticket.add_account
-                (account)
+                ticket.add_account(account)
                 status = "NULL"
         for line in lines:
              words = line.split()
